@@ -15,14 +15,11 @@
           <link rel="stylesheet" type="text/css" href="../css/src/page_main.css" />
           <script src="../js/jQuery/jquery-3.2.1.min.js"></script>
           <script src="../js/jQuery/jquery-ui.min.js"></script>
-        <!--   <script src="../js/main.js"></script> //바디의 마지막 자식에 써야한다. 여기에 쓰려면 따로 제일 밑으로 보내는 명령어가 필요하다.-->
           <title>MISSHA</title>
       </head>
       <body>
         <div id="wrap">
-
           <header id="headBox">
-
             <div id="subHbox" class="clearfix">
               <div class="inner_full_box"></div>
               <h2>beautyNet</h2>
@@ -32,13 +29,9 @@
                 <li><a href="#">쿠폰</a><span class="count_box"></span></li>
               </ul>
             </div>
-
             <div id="mainHbox" class="clearfix">
-
               <div class="inner_full_box"><!-- full페이지 box --></div>
-
               <h1><a href="./main.html"><span class="hidden">missha</span></a></h1>
-
               <nav id="unb">
                 <h2 class="hidden"> 유저 정보 네비게이션 </h2>
                 <ul>
@@ -68,7 +61,10 @@
                   <legend class="hidden">검색창</legend>
                   <input type="search" id="search" value="" name="search" />
                   <label for="search" class="hidden">검색할 키워드를 입력하세요.</label>
-                  <button type="button"><i class="fa fa-search" aria-hidden="true"></i><span class="hidden">검색</span></button>
+                  <button type="button">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <span class="hidden">검색</span>
+                  </button>
                 </fieldset>
               </form>
               <div id="recommendBox"><a href="#">맞춤찾기</a></div>
@@ -110,17 +106,17 @@
               <h3>event</h3>
               <div class="ulWrap">
                 <ul class="clearfix hidden_wrap">
-                  <li><a href="#"><span>이벤트 상품</span></a></li>
-                  <li><a href="#"><span>이벤트 상품</span></a></li>
-                  <li><a href="#"><span>이벤트 상품</span></a></li>
-                  <li><a href="#"><span>이벤트 상품</span></a></li>
-                  <li><a href="#"><span>베어베어 콜라보</span></a></li>
-                  <li><a href="#"><span>쿠션 전품목 50% 할인</span></a></li>
-                  <li><a href="#"><span>이벤트 상품</span></a></li>
-                  <li><a href="#"><span>이벤트 상품</span></a></li>
+                  <li class="event_1"><a href="#"><span>이벤트 상품</span></a></li>
+                  <li class="event_2"><a href="#"><span>이벤트 상품</span></a></li>
+                  <li class="event_3"><a href="#"><span>이벤트 상품</span></a></li>
+                  <li class="event_4"><a href="#"><span>이벤트 상품</span></a></li>
+                  <li class="event_5"><a href="#"><span>베어베어 콜라보</span></a></li>
+                  <li class="event_6"><a href="#"><span>쿠션 전품목 50% 할인</span></a></li>
+                  <li class="event_7"><a href="#"><span>이벤트 상품</span></a></li>
+                  <li class="event_8"><a href="#"><span>이벤트 상품</span></a></li>
                 </ul>
-                <button id="goLeft"><span class="hidden">왼쪽으로 가는 버튼</span></button>
-                <button id="goRight"><span class="hidden">오른쪽으로 가는 버튼</span></button>
+                <div id="goLeft"><span class="hidden">왼쪽으로 가는 버튼</span></div>
+                <div id="goRight"><span class="hidden">오른쪽으로 가는 버튼</span></div>
               </div>
             </article>
 
@@ -129,16 +125,24 @@
               <div>
                 <ul class="clearfix">
                   <li>
-                    <a href="#"><span class="black_screen">스탠딩 마그네틱<br />브러쉬 10종세트</span></a>
+                    <a href="#">
+                      <span class="black_screen">스탠딩 마그네틱<br />브러쉬 10종세트</span>
+                    </a>
                   </li>
                   <li>
-                    <a href="#"><span class="black_screen">수퍼아쿠아<br />모이스처 에센스 패드</span></a>
+                    <a href="#">
+                      <span class="black_screen">수퍼아쿠아<br />모이스처 에센스 패드</span>
+                    </a>
                   </li>
                   <li>
-                    <a href="#"><span class="black_screen">니어스킨<br />pH 밸런싱 클렌징</span></a>
+                    <a href="#">
+                      <span class="black_screen">니어스킨<br />pH 밸런싱 클렌징</span>
+                    </a>
                   </li>
                   <li>
-                    <a href="#"><span class="black_screen">미샤 시그너처<br />아우라 텐션</span></a>
+                    <a href="#">
+                      <span class="black_screen">미샤 시그너처<br />아우라 텐션</span>
+                    </a>
                   </li>
                 </ul>
               </div>

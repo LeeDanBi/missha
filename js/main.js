@@ -18,19 +18,22 @@
   var goLeft = $('#goLeft');
   var eContain = $('#eventBox ul');
   var li_last = eContain.find('li').last();
+  var i = 0;
   var li_first;
-  li_last.prependTo(eContain);
 
+
+  goLeft.on('click',GoLeft_li);
   goRight.on('click',GoRight_li);
 
-  function GoRight_li(e){
-    e.preventDefault();
+  //왼쪽 버튼
+  function GoLeft_li(){
+    eContain.find('li').last().prependTo(eContain);
+  };
 
-    eContain.stop().animate({marginLeft:-640+'px'}, 500, function(){
-    li_first = eContain.children('li').first(); 
-    li_first.appendTo(eContain);
-    eContain.css({marginLeft: -320+'px'});
-    });
+
+  //오른쪽 버튼
+  function GoRight_li(){
+    eContain.find('li').first().appendTo(eContain);
   };
 
 
